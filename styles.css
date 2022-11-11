@@ -7,6 +7,7 @@
   --color-light-gray: #f3f3ef;
   --color-dark-gray: #adadad;
   --section-padding: 3rem;
+  --section-padding-large: 7rem 3rem;
 }
 
 * {
@@ -25,10 +26,9 @@ body {
 }
 
 body {
-  font-size: calc(15px + 0.3vw);
-
+  font-size: calc(13px + 0.3vw);
   font-family: "Roboto", sans-serif;
-  /* color: var(--text-main); */
+  color: var(--color-body);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -50,8 +50,14 @@ a {
 h1,
 h2,
 h3,
-h4 {
+h4,
+.btn-link {
   font-family: "Inter", sans-serif;
+  color: var(--color-black);
+}
+
+p {
+  line-height: 1.6rem;
 }
 
 /*Navbar styles*/
@@ -115,6 +121,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     padding: 3rem;
+    align-items: flex-start;
   }
 
   .navbar.active {
@@ -176,27 +183,27 @@ header {
 }
 
 .btn-link {
-  background-color: var(--color-white);
   display: flex;
   align-items: center;
-  font-family: "Inter", sans-serif;
   font-weight: 600;
+  height: 50px;
+  width: fit-content;
 }
 
 .btn-link:hover .btn-link__image {
   transition: all 0.3s ease-in-out;
-
   transform: rotate(45deg);
 }
 
-.btn-link div:first-child {
+/* .btn-link div:first-child {
   padding: 1rem;
-}
+} */
 .btn-link div:last-child {
   background-color: var(--color-green);
-  padding: 1rem;
+  padding: 15px;
   height: inherit;
   width: inherit;
+  margin-left: 1rem;
 }
 
 .btn-link__image {
@@ -210,6 +217,8 @@ header {
   right: 0px;
   bottom: 0px;
   height: 50px;
+  background-color: var(--color-white);
+  padding: 1rem 0px 1rem 1rem;
 }
 
 /*Nav link styles*/
@@ -243,4 +252,79 @@ header {
 .hero__content h1 {
   font-size: 4rem;
   max-width: 55%;
+  color: var(--color-white);
+}
+
+/*Mission section*/
+
+.mission {
+  display: flex;
+  padding: var(--section-padding-large);
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.mission-heading {
+  flex: 1 1 300px;
+}
+
+.mission-heading h2 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.mission-content {
+  flex: 1 1 400px;
+}
+.mission-content p {
+  margin-bottom: 2rem;
+  max-width: 82%;
+}
+
+/*Our Collection section*/
+
+.collection {
+  background-color: var(--color-light-gray);
+  padding: 3rem 0px 3rem 3rem;
+}
+
+.collection h3 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.cards-container {
+  display: flex;
+  gap: 3rem;
+  /* grid-auto-columns: 28%;
+  grid-column-gap: 10px;
+  grid-auto-flow: column; */
+  /* padding: 25px 0px;
+  list-style: none; */
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  gap: 1rem;
+  /* background: white; */
+  border-radius: 12px;
+  /* box-shadow: 0 5px 15px rgb(0 0 0 / 15%); */
+  scroll-snap-align: start;
+  transition: all 0.2s;
+}
+
+.card-media {
+  width: 350px;
+  /* object-fit: contain; */
+  height: 520px;
+}
+
+.card-media img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
