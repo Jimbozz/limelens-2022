@@ -4,7 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <img src="/assets/limelens-logo.png" alt="limelens logo" />
+        </div>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="navbar__menu">
+          <a href="/" class="navbar__link" id="link-style">Home</a>
+          <a href="/" class="navbar__link" id="link-style">Products</a>
+          <a href="/" class="navbar__link" id="link-style">About</a>
+          <a href="/" class="navbar__link btn">Pre-order</a>
+        </div>
+      </nav>
+    </header>
+    <main class="wrapper">
+      <section>
+        <div class="hero">
+          <div class="hero__content">
+            <h1>The universal lens system</h1>
+          </div>
+          <a class="btn-link hero-button">
+            <div>Discover</div>
+            <div>
+              <img
+                class="btn-link__image"
+                src="/assets/diagonal-arrow.png"
+                alt=""
+              />
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">Footer</footer>
+    <script src="app.js"></script>
+  </body>
 </html>
