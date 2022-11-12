@@ -1,11 +1,12 @@
 :root {
-  --color-green: #ddfe65;
+  --color-green: #d4fb45;
   --color-body: #6e7174;
   --color-white: white;
   --color-black: #151515;
   --color-black-shade: #353535;
   --color-light-gray: #f3f3ef;
   --color-dark-gray: #adadad;
+  --color-footer: #eeeeee;
   --section-padding: 3rem;
   --section-padding-large: 7rem 3rem;
 }
@@ -56,11 +57,23 @@ h4,
   color: var(--color-black);
 }
 
+h2 {
+  font-size: 3rem;
+}
+
 p {
   line-height: 1.6rem;
 }
 
-/*Navbar styles*/
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*Navbar styles
+-------------------------------------------
+*/
 
 header {
   position: absolute;
@@ -90,11 +103,6 @@ header {
   padding-left: 2rem;
   width: auto;
   height: 35px;
-}
-
-.navbar__logo img {
-  height: 100%;
-  width: 100%;
 }
 
 .navbar__link {
@@ -166,13 +174,19 @@ header {
   }
 }
 
-/*Link button styles*/
+/*Link button styles
+----------------------------------------------------
+*/
 
 .btn {
   background-color: black;
   padding: 10px 19px;
   border-radius: 4px;
   color: var(--color-white);
+  display: inline-block;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
 }
 
 .btn:hover {
@@ -206,12 +220,6 @@ header {
   margin-left: 1rem;
 }
 
-.btn-link__image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
 .hero-button {
   position: absolute;
   right: 0px;
@@ -230,7 +238,9 @@ header {
   text-decoration: underline;
 }
 
-/*Hero section*/
+/*Hero section
+----------------------------------------------
+*/
 
 .hero {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
@@ -255,7 +265,9 @@ header {
   color: var(--color-white);
 }
 
-/*Mission section*/
+/*Mission section
+---------------------------------------------------
+*/
 
 .mission {
   display: flex;
@@ -270,7 +282,6 @@ header {
 
 .mission-heading h2 {
   margin-bottom: 1rem;
-  font-size: 3rem;
 }
 
 .mission-content {
@@ -281,7 +292,9 @@ header {
   max-width: 82%;
 }
 
-/*Our Collection section*/
+/*Our Collection section
+------------------------------------------------------
+*/
 
 .collection {
   background-color: var(--color-light-gray);
@@ -296,11 +309,6 @@ header {
 .cards-container {
   display: flex;
   gap: 3rem;
-  /* grid-auto-columns: 28%;
-  grid-column-gap: 10px;
-  grid-auto-flow: column; */
-  /* padding: 25px 0px;
-  list-style: none; */
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
@@ -311,20 +319,190 @@ header {
   /* padding: 20px; */
   gap: 1rem;
   /* background: white; */
-  border-radius: 12px;
+  /* border-radius: 12px; */
   /* box-shadow: 0 5px 15px rgb(0 0 0 / 15%); */
   scroll-snap-align: start;
   transition: all 0.2s;
 }
 
-.card-media {
-  width: 350px;
-  /* object-fit: contain; */
-  height: 520px;
+.card:hover .card-content {
+  text-decoration: underline;
 }
 
-.card-media img {
-  height: 100%;
-  width: 100%;
+.card-media {
+  width: 350px;
+  height: 520px;
+  background-color: white;
+}
+
+/*Lens on phone image section
+---------------------------------------------
+*/
+
+.phone-lens {
+  height: 92vh;
+}
+
+/*Making our lenses section
+---------------------------------------------
+*/
+
+.made {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.made-image__left {
+  flex: 1;
+  min-width: 330px;
+}
+
+.made-image__left img {
   object-fit: cover;
+}
+
+.made-content {
+  flex: 1;
+  background-color: var(--color-dark-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  min-width: 330px;
+  color: var(--color-black);
+}
+
+.made-content h2 {
+  max-width: 50%;
+}
+
+.made-image__right {
+  width: 100%;
+  height: 62%;
+}
+
+/*About our lenses section
+---------------------------------------------
+*/
+
+.about-lenses {
+  padding: var(--section-padding);
+}
+
+.about-lenses h2 {
+  margin-bottom: 4rem;
+  max-width: 24rem;
+}
+
+.about-lenses__container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.about-lenses__content {
+  flex: 1 1 250px;
+  padding: 0rem 2rem 2rem 0px;
+}
+.about-lenses__content h3 {
+  margin-bottom: 1rem;
+}
+.about-lenses__content p {
+  max-width: 330px;
+}
+
+.about-lenses__image {
+  flex: 1 1 250px;
+  height: 35rem;
+}
+
+/*Green banner section
+---------------------------------------------
+*/
+
+.green-banner {
+  background-color: var(--color-green);
+  padding: 3rem;
+  color: var(--color-black);
+}
+
+.green-banner p {
+  margin-bottom: 1rem;
+}
+
+/*Footer
+---------------------------------------------
+*/
+
+.footer {
+  padding: 3rem;
+  background-color: var(--color-footer);
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 1;
+  border: 1px solid var(--color-black);
+}
+
+/* .footer-wrapper > div {
+  padding: 2rem 2rem 9rem 2rem;
+} */
+
+.footer-left {
+  flex: 1 1 50%;
+  border-right: 1px solid black;
+  padding: 2rem 2rem 9rem 2rem;
+}
+
+@media screen and (max-width: 655px) {
+  .footer-left {
+    border-bottom: 1px solid black;
+    border-right: 0px;
+  }
+}
+
+.footer-left h3 {
+  margin-bottom: 1rem;
+}
+
+.footer-right {
+  display: flex;
+  gap: 5rem;
+  flex: 1 1 50%;
+  padding: 2rem 2rem 9rem 2rem;
+}
+
+.footer-right > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form button {
+  border: none;
+  /* height: inherit; */
+  /* display: -webkit-inline-box; */
+  width: fit-content;
+}
+
+input {
+  border: none;
+  /* padding-left: 1rem; */
+  padding: 1rem;
+  width: 65%;
+}
+
+@media screen and (max-width: 655px) {
+  input {
+    width: 100%;
+  }
 }
