@@ -19,11 +19,13 @@
 
 html {
   font-size: 100%;
+  scroll-behavior: initial;
 }
 
 html,
 body {
-  height: 100vh;
+  width: 100%;
+  min-height: 100%;
 }
 
 body {
