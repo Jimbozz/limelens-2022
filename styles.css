@@ -291,6 +291,13 @@ header {
   background-color: var(--color-light-gray);
 }
 
+@media screen and (max-width: 768px) {
+  .image-slider {
+    overflow-wrap: normal;
+    overflow-x: auto;
+  }
+}
+
 .image-slider h3 {
   margin-bottom: 2rem;
   text-align: center;
