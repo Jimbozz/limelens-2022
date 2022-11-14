@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles.css" />
-    <title>Document</title>
+    <title>Limelens | Home</title>
   </head>
   <body>
     <header>
@@ -35,7 +35,7 @@
     <main class="wrapper">
       <section class="hero">
         <div class="hero__content">
-          <h1>The universal lens system</h1>
+          <h1 class="hero-heading">The universal lens system</h1>
         </div>
         <a class="btn-link hero-button">
           <div>Discover</div>
@@ -43,7 +43,7 @@
             <img
               class="btn-link__image"
               src="/assets/diagonal-arrow.png"
-              alt=""
+              alt="arrow icon"
             />
           </div>
         </a>
@@ -66,67 +66,93 @@
               <img
                 class="btn-link__image"
                 src="/assets/diagonal-arrow.png"
-                alt=""
+                alt="arrow icon"
               />
             </div>
           </a>
         </div>
       </section>
-      <section class="collection">
-        <h3>Our lens collection</h3>
-        <div class="cards-container">
-          <article class="card">
-            <div class="card-media">
-              <img
-                src="/assets/lens-attachment.png"
-                alt="limelens lens attachment"
-                loading="lazy"
-              />
-            </div>
-            <div class="card-content">
-              <h4>Lens attachment</h4>
-            </div>
-            <a href="/" class="card-link"></a>
-          </article>
+      <div class="animation-container">
+        <section class="image-slider">
+          <h3>Shop our lenses</h3>
+          <div class="horizontal scrolling-wrapper-flexbox">
+            <article class="card">
+              <div class="card-media">
+                <img
+                  src="/assets/lens-attachment.png"
+                  alt="limelens lens attachment"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-content">
+                <h4>Lens attachment</h4>
+              </div>
+              <a href="/" class="card-link"></a>
+            </article>
 
-          <article class="card">
-            <div class="card-media">
-              <img
-                src="/assets/macro-lens.png"
-                alt="limelens macro lens"
-                loading="lazy"
-              />
-            </div>
-            <div class="card-content">
-              <h4>Macro lens</h4>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-media">
-              <img
-                src="/assets/telephoto-lens.png"
-                alt="limelens telephoto lens"
-                loading="lazy"
-              />
-            </div>
-            <div class="card-content">
-              <h4>Telephoto lens</h4>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-media">
-              <img
-                src="/assets/wide-lens.png"
-                alt="limelens wide lens"
-                loading="lazy"
-              />
-            </div>
-            <div class="card-content">
-              <h4>Wide lens</h4>
-            </div>
-          </article>
-        </div>
-      </section>
+            <article class="card">
+              <div class="card-media">
+                <img
+                  src="/assets/macro-lens.png"
+                  alt="limelens macro lens"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-content">
+                <h4>Macro lens</h4>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img
+                  src="/assets/telephoto-lens.png"
+                  alt="limelens telephoto lens"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-content">
+                <h4>Telephoto lens</h4>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img
+                  src="/assets/wide-lens.png"
+                  alt="limelens wide lens"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-content">
+                <h4>Wide lens</h4>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img
+                  src="/assets/wide-lens.png"
+                  alt="limelens wide lens"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-content">
+                <h4>Wide lens</h4>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img
+                  src="/assets/wide-lens.png"
+                  alt="limelens wide lens"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-content">
+                <h4>Wide lens</h4>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
       <section class="phone-lens">
         <img
           src="/assets/lens-on-phone.jpg"
@@ -136,12 +162,15 @@
       </section>
       <section class="made">
         <div class="made-image__left">
-          <img src="/assets/making-lenses.jpg" alt="" />
+          <img
+            src="/assets/making-lenses.jpg"
+            alt="Man using photoshop on computer"
+          />
         </div>
         <div class="made-content">
           <h2>Making our lenses</h2>
           <div class="made-image__right">
-            <img src="/assets/lens-clip.png" alt="" />
+            <img src="/assets/lens-clip.png" alt="Limelens attachment" />
           </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -150,23 +179,47 @@
         </div>
       </section>
       <section class="about-lenses">
-        <h2>A little about our lenses</h2>
-        <div class="about-lenses__container">
-          <div class="about-lenses__content">
-            <h3>The macro lens</h3>
+        <div class="about-content">
+          <div class="about-sticky">
+            <h2>About our lens collection</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div class="about-lenses__image">
-            <img
-              src="/assets/macro-lens.png"
-              alt="limelens macro lens on iphone"
-            />
+        </div>
+        <div class="about-lenses__images">
+          <div class="image-container">
+            <div class="about-lenses__image">
+              <img
+                src="/assets/lens-attachment.png"
+                alt="limelens lens attachment on iphone"
+              />
+            </div>
+            <h3>The lens attachment</h3>
+          </div>
+          <div class="image-container">
+            <div class="about-lenses__image">
+              <img
+                src="/assets/macro-lens.png"
+                alt="limelens macro lens on iphone"
+              />
+            </div>
+            <h3>The macro lens</h3>
+          </div>
+          <div class="image-container">
+            <div class="about-lenses__image">
+              <img
+                src="/assets/telephoto-lens.png"
+                alt="limelens telephoto lens on iphone"
+              />
+            </div>
+            <h3>The telephoto lens</h3>
           </div>
         </div>
       </section>
+      <!-- trying something -->
+
       <section class="green-banner">
         <h2>Be the first to get one.</h2>
         <p>
