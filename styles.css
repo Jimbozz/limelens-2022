@@ -102,7 +102,7 @@ header {
 
 .navbar__logo {
   text-decoration: none;
-  padding-left: 2rem;
+  padding-left: 1rem;
   width: auto;
   height: 35px;
 }
@@ -130,7 +130,7 @@ header {
     top: -1000px;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 3rem;
+    padding: 2rem;
     align-items: flex-start;
   }
 
@@ -289,6 +289,12 @@ header {
 .image-slider {
   padding: 3rem;
   background-color: var(--color-light-gray);
+}
+
+@media screen and (max-width: 768px) {
+  .image-slider {
+    padding: 3rem 1rem;
+  }
 }
 
 .image-slider h3 {
