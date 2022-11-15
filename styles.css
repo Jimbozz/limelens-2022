@@ -242,6 +242,7 @@ header {
   display: flex;
   align-items: center;
   padding: var(--section-padding);
+  position: relative;
 }
 
 .hero__content {
