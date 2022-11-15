@@ -207,8 +207,9 @@ header {
 .btn-link div:last-child {
   background-color: var(--color-green);
   padding: 15px;
-  height: inherit;
-  width: inherit;
+  height: 50px;
+  width: 50px;
+
   margin-left: 1rem;
 }
 
