@@ -116,6 +116,7 @@ header {
   body.active {
     overflow-y: hidden;
     overflow-x: hidden;
+    position: fixed;
   }
 
   .navbar__link {
